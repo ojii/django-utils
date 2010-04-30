@@ -1,8 +1,8 @@
-from django.db.models.fields import CharField
+from django.db.models.fields import SlugField
 from utils.internal_utils import AutoSlugFieldFiller
 
 
-class AutoSlugField(CharField):
+class AutoSlugField(SlugField):
     __AUTO_SLUG_FIELD_SIGNALS = {}
     
     def __init__(self, connected_to, verbose_name=None, name=None,

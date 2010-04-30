@@ -1,5 +1,4 @@
 from django import template
-from django.template.defaulttags
 
 register = template.Library()
 
